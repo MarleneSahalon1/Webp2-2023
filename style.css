@@ -1,0 +1,45 @@
+
+body {
+  background-color: lightblue;
+}
+
+h1.header {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 2px 2px blue;
+
+}
+
+p.aboutme {
+  font-family: verdana;
+  font-size: 20px;
+}
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+.coding {
+	width: 400px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 15px;
+	border: 3px solid blue;
+
+}
