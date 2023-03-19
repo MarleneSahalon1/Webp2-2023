@@ -4,6 +4,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="style.css">
 <script src="poem.js" type="text/javascript"></script>
+
 <!--
 A House of Dust reimplementation
 copyright (c) 2014 Nick Montfort <nickm@nickm.com>
@@ -31,12 +32,12 @@ Updated 28 August 2019 to add a link to an image of the chapbook.
 
 <body onload="produce_litany();">
 <div id="info">
-    <h2 onmouseover="this.innerHTML='Thank You'" onmouseout="this.innerHTML='Mouse Over Me'">LAND OF NYC</h2>
+    <h2 style=color:#FFFFFF; onmouseover="this.innerHTML='THE BIG APPLE'" onmouseout="this.innerHTML='CITY OF LIGHTS'">LAND OF NYC</h2>
     <h3>Marlene Sahalon</h3>
-    1967<br />
+    1967<br/>
     Seimens System 4004, <a href="https://eastofborneo.org/wp-content/uploads/2016/08/a-house-of-dust-alison-knowles-and-james-tenney-1967-406x500.jpeg">line printer</a><br />
-    FORTRAN IV<br />
-    <br />
+    FORTRAN IV<br/>
+    <br/>
     Remixed code from:<br />
     <a href="http://nickm.com">Nick Montfort</a>
     <br>
@@ -44,5 +45,18 @@ Updated 28 August 2019 to add a link to an image of the chapbook.
     <a href="buildings.html">See My Poem Animation</a>
 </div>
 <div id="main"></div>
+<button class="btn">Change color</button>
+    <script>
+      const btn = document.querySelector('button');
+
+      function random(number) {
+        return Math.floor(Math.random() * (number+1));
+      }
+
+      btn.addEventListener('mouseover', () => {
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+      });
+    </script>
 </body>
 </html>

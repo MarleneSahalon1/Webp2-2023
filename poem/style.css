@@ -4,6 +4,7 @@ body {
     margin:0 0 0 18pt;
     font-family:Courier New, Monospace;
     font-size:12pt;
+    font-weight: bolder;
    }
    a {
     color:#117;
@@ -14,7 +15,7 @@ body {
     width:70%;
    }
    #main div {
-    font-weight:normal;
+    font-weight:bolder;
     padding-bottom:9px;
    }
    #info {
@@ -30,5 +31,13 @@ body {
     border-left:thin #000 solid;
     border-bottom:thin #000 solid;
     padding:9px;
-    font-size:80%
+    font-size:80%;
+   }
+   .btn {
+    background-color: #999;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+    width: 15%;
+    align-items: center;
+    border: #999 solid 2px;
    }
